@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login_signup.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Login form created         -->
+        <form class="form" id="login">
+            <h1 class="form_title">Login</h1>
+            <div class="form_msg form_msg_error"></div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="Username or Email">
+                <div class="form_ip_error_msg"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="password">
+                <div class="form_ip_error_msg"></div>
+            </div>
+            <button class="form_button" type="submit">Continue</button>
+            <p class="form_text">
+                <a href="#" id="forgetPassword" class="form_link">forget password?</a>
+            </p>
+            <p class="form_text">
+                <a href="#" id="linkCreateAccount" class="form_link">Don't have an account? Create account</a>
+            </p>
+
+        </form>
+
+        <!-- Create New Account page -->
+        <form class="form form-hidden" id="createAccount">
+            <h1 class="form_title">Create Account</h1>
+            <div class="form_msg form_msg_error"></div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="Username">
+                <div class="form_ip_error_msg"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="Email Address">
+                <div class="form_ip_error_msg"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" class="form_input " autofocus placeholder="Password">
+                <div class="form_ip_error_msg"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="password" class="form_input " autofocus placeholder="Confirm Password">
+                <div class="form_ip_error_msg"></div>
+            </div>
+            <button class="form_button" type="submit">Save</button>
+
+            <p class="form_text">
+                <a href="#" id="linkLogin" class="form_link">Already have an account? Sign in</a>
+            </p>
+        </form>
+
+        <!-- Password Reset Page -->
+        <form class="form form-hidden" id="resetPassword">
+            <h1 class="form_title">Reset Password</h1>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="new password">
+                <div class="form_ip_error_msg"></div>
+            </div>
+            <div class="form_input-group">
+                <input type="text" class="form_input" autofocus placeholder="confirm password">
+                <div class="form_ip_error_msg"></div>
+            </div>
+            <button class="form_button" type="submit">Continue</button>
+
+            <p class="form_text">
+                <a href="#" id="linkLogin" class="form_link">Already have an account? Sign in</a>
+            </p>
+        </form>
+
+    </div>
+
+
+    <script src="loginSignup.js"></script>
+</body>
+
+</html>
